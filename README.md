@@ -4,7 +4,7 @@
 
 ## List of Components
 
-- Collapse (wip)
+- Collapse
 - Switch (todo)
 - Offcanvas (todo)
 - Tabs (todo)

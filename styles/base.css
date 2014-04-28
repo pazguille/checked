@@ -1,0 +1,20 @@
+/**
+ * Base
+ */
+*,
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+  background-color: #F6F8F8;
+}
+
+

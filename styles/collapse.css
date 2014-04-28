@@ -1,0 +1,62 @@
+/**
+ * Collapse
+ */
+.collapse {
+  overflow: hidden;
+  position: relative;
+}
+
+.collapse-control {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.collapse-header {
+  position: relative;
+  z-index: 1;
+}
+
+.collapse-header,
+.collapse-trigger {
+  cursor: pointer;
+}
+
+.collapse-trigger {
+  display: block;
+}
+
+.collapse-content {
+  display: none;
+}
+
+.collapse-control:checked ~ .collapse-content {
+  display: block;
+}
+
+/**
+ * Visual
+ */
+.collapse {
+  width: 500px;
+}
+
+.collapse h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.collapse-header {
+  background-color: #F5F5F5;
+}
+
+.collapse-trigger {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.collapse-content {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-top-width: 0;
+}
