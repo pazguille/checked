@@ -8,77 +8,10 @@
 
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/collapse.css" rel="stylesheet">
+    <link href="styles/modal.css" rel="stylesheet">
+    <link href="styles/switch.css" rel="stylesheet">
+    <link href="styles/demo.css" rel="stylesheet">
 
-    <style>
-      header {
-        padding: 30px 60px;
-        background: #d35400;
-        color: #fff;
-      }
-
-      .title {
-        font-size: 4em;
-        line-height: 1em;
-      }
-
-      .subtitle {
-        font-size: 2em;
-        margin: 20px 0;
-      }
-
-      section {
-        margin: 50px 20px;
-      }
-
-      section > h2 {
-        font-size: 2.5em;
-        font-weight: 500;
-        padding-bottom: 9px;
-        margin: 40px 0 20px;
-        border-bottom: 1px solid #EEE;
-      }
-
-      footer {
-        margin: 30px auto;
-        text-align: center;
-      }
-
-      .heart {
-        font-style: normal;
-        font-weight: 500;
-        color: #c0392b;
-        text-decoration: none;
-      }
-
-      #twitter {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-      }
-
-      #github-button {
-        display: block;
-        margin: 30px auto 0;
-        position: relative;
-        left: 40px;
-      }
-
-      #github-ribbon {
-        display: inline-block;
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 100;
-        border: 0;
-        width: 149px;
-        height: 149px;
-      }
-
-      .github-buttons {
-        text-align: center;
-        margin: 1em 0;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -90,15 +23,40 @@
       <h2>Collapse</h2>
       <div class="collapse">
         <input id="collapse" class="collapse-control" type="checkbox">
-        <h1 class="collapse-header"><label for="collapse" class="collapse-trigger">Collapse</label></h1>
+        <h2 class="collapse-header"><label for="collapse" class="collapse-trigger">Collapse</label></h2>
         <div class="collapse-content">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
       </div>
     </section>
 
+    <section>
+      <h2>Modal</h2>
+      <div>
+        <input id="modal" class="modal-control" type="checkbox">
+        <button class="trigger"><label for="modal" class="modal-trigger">Launch Modal</label></button>
+        <div class="modal">
+          <div class="modal-container">
+            <div class="modal-content">
+              <label for="modal" class="modal-close"><i>&times;</i></label>
+              <h2>Modal</h2>
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Switch</h2>
+      <label class="switch">
+        Switch
+        <input class="switch-control" type="checkbox">
+        <div class="switch-toggle"></div>
+      </label>
+    </section>
+
     <footer>
-      <iframe id="twitter" allowtransparency="true" frameborder="0" width="100" height="22" scrolling="no" src="https://platform.twitter.com/widgets/tweet_button.html?text=checked.js%3UI%20A%20elements%20using%20:checked%20CSS%20pseudo-class%20selectors.&amp;url=http%3A%2F%2Fpazguille.github.io%2Fgloomy"></iframe>
       <a href="https://github.com/pazguille/checked.css" id="github-ribbon"><img width="149" height="149" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
       by <a href="http://pazguille.me/">Guille Paz</a> with <a href="http://welovefrontend.org/" class="heart">❤</a>
       <iframe id="github-button" src="http://ghbtns.com/github-btn.html?user=pazguille&repo=checked.css&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="152" height="30"></iframe>

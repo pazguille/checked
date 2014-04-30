@@ -1,0 +1,72 @@
+header {
+  padding: 100px 60px;
+  background: #c0392b;
+  color: #fff;
+  border-top: 30px solid #FFF;
+}
+
+.title {
+  font-size: 4em;
+  line-height: 1em;
+}
+
+.subtitle {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+section {
+  margin: 50px 20px;
+  display: inline-table;
+  width: 30%;
+  text-align: center;
+}
+
+section > h2 {
+  font-size: 2.5em;
+  font-weight: 500;
+  padding-bottom: 9px;
+  margin: 0 0 20px;
+  border-bottom: 1px solid #EEE;
+}
+
+footer {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.heart {
+  font-style: normal;
+  font-weight: 500;
+  color: #c0392b;
+  text-decoration: none;
+}
+
+#twitter {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#github-button {
+  display: block;
+  margin: 30px auto 0;
+  position: relative;
+  left: 40px;
+}
+
+#github-ribbon {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  border: 0;
+  width: 149px;
+  height: 149px;
+}
+
+.github-buttons {
+  text-align: center;
+  margin: 1em 0;
+}

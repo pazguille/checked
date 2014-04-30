@@ -37,13 +37,17 @@
 /**
  * Visual
  */
+
 .collapse {
-  width: 500px;
+  width: 350px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .collapse h1 {
-  margin: 0;
   text-align: center;
+  font-weight: 500;
+  margin: 0 auto;
 }
 
 .collapse-header {
