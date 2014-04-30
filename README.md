@@ -5,10 +5,10 @@
 ## List of Components
 
 - Collapse
-- Switch (todo)
+- Modal
+- Switch
 - Offcanvas (todo)
 - Tabs (todo)
-- Modal (todo)
 - Tooltip (todo)
 - Dropdown / Menu (todo)
 
