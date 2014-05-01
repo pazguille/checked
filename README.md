@@ -1,4 +1,4 @@
-# checked.css
+# checked
 
 > UI elements using :checked CSS pseudo-class selectors.
 
