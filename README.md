@@ -1,6 +1,6 @@
 # checked
 
-> UI elements using :checked CSS pseudo-class selectors.
+> UI components using :checked CSS pseudo-class selectors.
 
 ## List of Components
 
