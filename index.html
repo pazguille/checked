@@ -4,70 +4,90 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <title>checked: UI elements using :checked CSS pseudo-class selectors.</title>
+    <title>checked: UI components using :checked CSS pseudo-class selectors.</title>
 
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/collapse.css" rel="stylesheet">
     <link href="styles/modal.css" rel="stylesheet">
     <link href="styles/switch.css" rel="stylesheet">
     <link href="styles/demo.css" rel="stylesheet">
-
+    <link href="styles/offcanvas.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <div class="checked">
         <label class="toggle-control-input">
-          <input id="a" type="checkbox" checked/>
+          <input id="logo" type="checkbox" checked/>
           <i class="toggle-control-icon"></i>
         </label>
       </div>
       <h1 class="title">checked</h1>
-      <h2 class="subtitle">UI elements using :checked CSS pseudo-class selectors.</h2>
+      <h2 class="subtitle">UI components using :checked CSS pseudo-class selectors.</h2>
     </header>
 
-    <div>
-      <section>
-        <h2>Collapse</h2>
-        <div class="collapse">
-          <input id="collapse" class="collapse-control" type="checkbox">
-          <h2 class="collapse-header"><label for="collapse" class="collapse-trigger">Collapse</label></h2>
-          <div class="collapse-content">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          </div>
+    <section>
+      <h2>Collapse</h2>
+      <div class="collapse">
+        <input id="collapse" class="collapse-control" type="checkbox">
+        <h2 class="collapse-header"><label for="collapse" class="collapse-trigger">Collapse</label></h2>
+        <div class="collapse-content">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section>
-        <h2>Modal</h2>
-        <div>
-          <input id="modal" class="modal-control" type="checkbox">
-          <button class="trigger"><label for="modal" class="modal-trigger">Launch Modal</label></button>
-          <div class="modal">
-            <div class="modal-container">
-              <label for="modal" class="modal-close" role="button"><i>&times;</i></label>
-              <div class="modal-content">
-                <h2>Modal</h2>
-                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-              </div>
+    <section>
+      <h2>Modal</h2>
+      <div>
+        <input id="modal" class="modal-control" type="checkbox">
+        <button class="trigger"><label for="modal" class="modal-trigger">Launch Modal</label></button>
+        <div class="modal">
+          <div class="modal-container">
+            <label for="modal" class="modal-close" role="button"><i>&times;</i></label>
+            <div class="modal-content">
+              <h2>Modal</h2>
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section>
-        <h2>Switch</h2>
-        <label class="switch">
-          Switch
-          <input class="switch-control" type="checkbox">
-          <div class="switch-toggle"></div>
-        </label>
-      </section>
+    <section>
+      <h2>Switch</h2>
+      <label class="switch">
+        Switch
+        <input class="switch-control" type="checkbox">
+        <div class="switch-toggle"></div>
+      </label>
+    </section>
 
-      <footer>
-        <a href="https://github.com/pazguille/checked" id="github-ribbon"><img width="149" height="149" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
-        by <a href="http://pazguille.me/">Guille Paz</a> with <a href="http://welovefrontend.org/" class="heart">❤</a>
-        <iframe id="github-button" src="http://ghbtns.com/github-btn.html?user=pazguille&repo=checked&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="152" height="30"></iframe>
-      </footer>
-    </div>
-  </body>
+    <section>
+      <h2>Offcanvas</h2>
+      <div class="offcanvas-container">
+        <input id="a" class="open-control" type="checkbox">
+        <nav class="main-nav" id="main-nav">
+          <div class="content-nav">
+
+          </div>
+        </nav>
+
+        <div class="page-wrap">
+          <header class="main-header">
+            <label for="a" class="open-menu">☰</label>
+            <h1>Title</h1>
+          </header>
+          <div class="content">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <div/>
+      </div>
+    </section>
+
+    <footer>
+      <a href="https://github.com/pazguille/checked" id="github-ribbon"><img width="149" height="149" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+      by <a href="http://pazguille.me/">Guille Paz</a> with <a href="http://welovefrontend.org/" class="heart">❤</a>
+      <iframe id="github-button" src="http://ghbtns.com/github-btn.html?user=pazguille&repo=checked&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="152" height="30"></iframe>
+    </footer>
+
+</body>
 </html>

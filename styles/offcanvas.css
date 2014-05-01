@@ -1,0 +1,62 @@
+/**
+ * Offcanvas
+ */
+.main-header {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #F5F5F5;
+  color: #333;
+}
+
+.open-menu {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-size: 32px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.open-control {
+  position: absolute;
+  opacity:0;
+}
+
+.page-wrap {
+  transition: -webkit-transform 400ms ease-in-out;
+}
+
+.content {
+  padding: 20px;
+}
+
+.main-nav {
+  position: absolute;
+  background-color: #fff;
+  width: 200px;
+  height: 100%;
+  -webkit-transform: translate3d(-200px,0,0);
+  transition: -webkit-transform 400ms ease-in-out;
+  overflow: auto;
+  background-color: #ecf0f1;
+}
+
+.open-control:checked ~ .page-wrap {
+  -webkit-transform: translate3d(200px,0,0);
+  width: 100%;
+  overflow: hidden;
+}
+
+.open-control:checked ~ .main-nav {
+  -webkit-transform: translate3d(0,0,0);
+}
+
+/**
+ * Visual
+ */
+.offcanvas-container {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #DDD;
+  text-align: left;
+}
