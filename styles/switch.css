@@ -41,8 +41,14 @@
 .switch-toggle {
   border: 1px solid #DDD;
   border-radius: 100px;
-  background-color: #2ECC71;
+  background-color: #E5E5E5;
   cursor: pointer;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.switch-control:checked + .switch-toggle {
+  background-color: #2ECC71;
 }
 
 .switch-toggle:before {
