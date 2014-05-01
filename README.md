@@ -7,8 +7,8 @@
 - Collapse
 - Modal
 - Switch
-- Offcanvas (todo)
-- Tabs (todo)
+- Offcanvas
+- Tabs
 - Tooltip (todo)
 - Dropdown / Menu (todo)
 
