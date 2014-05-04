@@ -9,7 +9,7 @@
 - Switch
 - Offcanvas
 - Tabs
-- Tooltip (todo)
+- Tooltip
 - Dropdown / Menu (todo)
 
 ## Maintained by
