@@ -92,7 +92,6 @@ section {
   margin: 50px 20px;
   display: inline-table;
   width: 30%;
-  text-align: center;
 }
 
 section > h2 {
@@ -142,12 +141,4 @@ footer {
 .github-buttons {
   text-align: center;
   margin: 1em 0;
-}
-
-
-/**
- * Components fixes
- */
-.tabs {
-  text-align: left;
 }

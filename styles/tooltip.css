@@ -1,0 +1,44 @@
+/**
+ * Tooltip
+ */
+.tooltip {
+  position: relative;
+}
+
+.tooltip-control {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.tooltip-trigger {
+  cursor: pointer;
+}
+
+.tooltip-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.tooltip-content:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-bottom-color: #333;
+}
+
+.tooltip-control:checked ~ .tooltip-content {
+  display: block;
+}
