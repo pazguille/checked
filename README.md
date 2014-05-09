@@ -10,7 +10,7 @@
 - Offcanvas
 - Tabs
 - Tooltip
-- Dropdown / Menu (todo)
+- Dropdown / Menu
 
 ## Maintained by
 - Guille Paz (Front-end developer | Web standards lover)
