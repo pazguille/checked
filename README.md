@@ -1,9 +1,7 @@
 # checked
-
 > UI components using :checked CSS pseudo-class selectors.
 
 ## List of Components
-
 - Collapse
 - Modal
 - Switch
@@ -11,6 +9,8 @@
 - Tabs
 - Tooltip
 - Dropdown / Menu
+- Checkboxes
+- Radio Buttons
 
 ## Maintained by
 - Guille Paz (Front-end developer | Web standards lover)
