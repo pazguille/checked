@@ -1,0 +1,15 @@
+{
+  "name": "checked",
+  "repository": "git://github.com/pazguille/checked",
+  "description": "UI components using :checked CSS pseudo-class selectors.",
+  "author": "Guille Paz <guille87paz@gmail.com>",
+  "version": "0.0.1",
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "mkdirp": "^0.3.5",
+    "gulp": "^3.6.2",
+    "gulp-concat": "^2.2.0",
+    "gulp-minify-css": "^0.3.4"
+  }
+}
