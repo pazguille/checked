@@ -1,0 +1,149 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+header {
+  padding: 70px 10%;
+  background: #2980b9;
+  color: #fff;
+}
+
+.checked {
+  position: absolute;
+  top: 75px;
+}
+
+.toggle-control-input input,
+.toggle-control-icon {
+  position: absolute;
+}
+
+.toggle-control-input {
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  border: 10px solid #FFF;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.toggle-control-input input {
+  opacity: 0;
+}
+
+.toggle-control-icon {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-style: normal;
+  border-radius: 100%;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  background-color: #E5E5E5;
+}
+
+.toggle-control-input input:checked ~ .toggle-control-icon {
+  background-color: #2ECC71;
+}
+
+.toggle-control-input input:checked ~ .toggle-control-icon:after {
+  -webkit-transition: opacity 0.05s ease-in-out;
+  -moz-transition: opacity 0.05s ease-in-out;
+  transition: opacity 0.05s ease-in-out;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  display: table;
+  width: 170px;
+  height: 50px;
+  border: 20px solid #FFF;
+  border-top: 0;
+  border-right: 0;
+  content: ' ';
+  box-shadow: -1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 8em;
+  line-height: 1em;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-size: 2em;
+  margin: 20px 0;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.title,
+.subtitle {
+  padding-left: 220px;
+}
+
+section {
+  margin: 50px 20px;
+  display: inline-table;
+  width: 30%;
+}
+
+section > h2 {
+  font-size: 2.5em;
+  font-weight: 500;
+  padding-bottom: 9px;
+  margin: 0 0 20px;
+  border-bottom: 1px solid #EEE;
+}
+
+footer {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.heart {
+  font-style: normal;
+  font-weight: 500;
+  color: #c0392b;
+  text-decoration: none;
+}
+
+#twitter {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#github-button {
+  display: block;
+  margin: 30px auto 0;
+  position: relative;
+  left: 40px;
+}
+
+#github-ribbon {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  border: 0;
+  width: 149px;
+  height: 149px;
+}
+
+.github-buttons {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.checkbox,
+.radio {
+  margin-right: 10px;
+}
