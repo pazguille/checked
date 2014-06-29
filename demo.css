@@ -1,19 +1,19 @@
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font: 100%/130% 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0 auto;
   background-color: #fff;
 }
 
 header {
-  padding: 70px 10%;
+  padding: 60px 10px 10px;
   background: #2980b9;
   color: #fff;
 }
 
 .checked {
   position: absolute;
-  top: 75px;
+  top: 60px;
+  left: 10px;
 }
 
 .toggle-control-input input,
@@ -23,9 +23,9 @@ header {
 
 .toggle-control-input {
   display: inline-block;
-  width: 170px;
-  height: 170px;
-  border: 10px solid #FFF;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #FFF;
   cursor: pointer;
   border-radius: 100%;
 }
@@ -61,9 +61,9 @@ header {
   top: 10%;
   left: 20%;
   display: table;
-  width: 170px;
-  height: 50px;
-  border: 20px solid #FFF;
+  width: 45px;
+  height: 15px;
+  border: 6px solid #FFF;
   border-top: 0;
   border-right: 0;
   content: ' ';
@@ -71,31 +71,27 @@ header {
 }
 
 .title {
-  font-size: 8em;
+  font-size: 3em;
   line-height: 1em;
   font-weight: 300;
+  padding-left: 65px;
 }
 
 .subtitle {
-  font-size: 2em;
+  font-size: 1.3em;
+  line-height: 1.3em;
   margin: 20px 0;
   font-weight: 100;
   letter-spacing: 1px;
 }
 
-.title,
-.subtitle {
-  padding-left: 220px;
-}
-
 section {
-  margin: 50px 20px;
-  display: inline-table;
-  width: 30%;
+  margin: 50px 10px;
 }
 
 section > h2 {
-  font-size: 2.5em;
+  font-size: 1.8em;
+  line-height: 1em;
   font-weight: 500;
   padding-bottom: 9px;
   margin: 0 0 20px;
@@ -146,4 +142,60 @@ footer {
 .checkbox,
 .radio {
   margin-right: 10px;
+}
+
+
+/**
+ * Medium Screens
+ */
+@media all and (min-width:40em) {
+
+}
+
+/**
+ * Large Screens
+ */
+@media all and (min-width: 54em) {
+  header {
+    padding: 70px 10%;
+  }
+
+  .checked {
+    top: 75px;
+    left: auto;
+  }
+
+  .toggle-control-input {
+    width: 170px;
+    height: 170px;
+    border: 10px solid #FFF;
+  }
+
+  .toggle-control-input input:checked ~ .toggle-control-icon:after {
+    width: 170px;
+    height: 50px;
+    border: 20px solid #FFF;
+    border-top: 0;
+    border-right: 0;
+  }
+
+  section {
+    margin: 50px 20px;
+    display: inline-table;
+    width: 30%;
+  }
+
+  .title {
+    font-size: 7em;
+    line-height: 1em;
+  }
+
+  .subtitle {
+    font-size: 1.7em;
+  }
+
+  .title,
+  .subtitle {
+    padding-left: 220px;
+  }
 }
