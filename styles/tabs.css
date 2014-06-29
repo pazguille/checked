@@ -6,6 +6,8 @@
   padding: 0;
   margin-bottom: 5px;
   list-style: none;
+  min-height: 250px;
+  overflow: hidden;
 }
 
 .tabs > li {
